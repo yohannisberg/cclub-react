@@ -42,7 +42,6 @@ const GlassesAnimation = () => {
       <img ref={triggerRef4} className="glasses g4" src="images/glasses.png" alt="Glasses"/>
       <img ref={triggerRef5} className="glasses g5" src="images/glasses.png" alt="Glasses"/>
       <img ref={triggerRef6} className="glasses g6" src="images/glasses.png" alt="Glasses"/>
-
     </div>
 
   );

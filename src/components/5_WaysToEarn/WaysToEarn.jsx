@@ -1,23 +1,7 @@
 import './WaysToEarn.css';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { SlideCustomPrevArrow } from '../SlideCustomPrevArrow';
-import { SlideCustomNextArrow } from '../SlideCustomNextArrow';
+import { SlideWaysToEarn } from '../SlideWaysToEarn';
 
 export function WaysToEarn() {
-
-  var settings = {
-    autoplay: false,
-    arrows:true,
-    dots:false,
-    infinite: true,
-    centerMode: true,
-    variableWidth: true,
-    centerPadding:0,
-    prevArrow: <SlideCustomPrevArrow/ >,
-    nextArrow: <SlideCustomNextArrow/ >
-  };
 
   return (
     <>
@@ -37,60 +21,7 @@ export function WaysToEarn() {
       </div>
 
       <div className="point-grid-component max-1300">
-        <Slider {...settings} className="point-grid">
-          <div className="point-item">
-            <p className="title">Share your <br/>address</p>
-
-            <div className="img-wrapper">
-              <img className="kit" src="images/ADDRESS.png" alt="Envelope"/>
-            </div>
-
-            <div className="points-wrapper">
-              <p>15</p>
-              <p>POINTS</p>
-            </div>
-          </div>
-          
-          <div className="point-item">
-            <p className="title">Share <br/>your bday</p>
-
-            <div className="img-wrapper">
-              <img className="lazyload kit" src="images/PARTYHAT.png" alt="Birthday"/>
-            </div>
-
-            <div className="points-wrapper">
-              <p>15</p>
-              <p>POINTS</p>
-            </div>
-          </div>
-
-          <div className="point-item">
-            <p className="title">Get <br/>pierced</p>
-
-            <div className="img-wrapper">
-              <img className="lazyload kit" src="images/CATEARRINGS.png" alt="Cat earrings"/>
-            </div>
-
-            <div className="points-wrapper">
-              <p>100</p>
-              <p>POINTS</p>
-            </div>
-          </div>
-    
-          <div className="point-item">
-            <p className="title">Make a <br/>purchase</p>
-
-            <div className="img-wrapper">
-              <img className="lazyload kit" src="images/SHOPPINGBAG.png" alt="Shopping bag"/>
-            </div>
-
-            <div className="points-wrapper">
-              <p>50</p>
-              <p>POINTS</p>
-            </div>
-          </div>
-
-        </Slider>
+        <SlideWaysToEarn />
       </div>
       
       <div className="cta-wrapper">
