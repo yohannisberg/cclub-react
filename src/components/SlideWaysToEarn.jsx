@@ -19,16 +19,16 @@ export function SlideWaysToEarn() {
   };
 
   const slideData = [
-    { title: ['Share your', <br/>, 'address'], image: 'images/ADDRESS.png', alt: 'Envelope', points: '15' },
-    { title: ['Share', <br/>, 'your bday'], image: 'images/PARTYHAT.png', alt: 'Birthday', points: '15' },
-    { title: ['Get', <br/>, 'pierced'], image: 'images/CATEARRINGS.png', alt: 'Cat earrings', points: '100' },
-    { title: ['Make a', <br/>, 'purchase'], image: 'images/SHOPPINGBAG.png', alt: 'Shopping bag', points: '50' }
+    { id: 1, title: ['Share your', <br/>, 'address'], image: 'images/ADDRESS.png', alt: 'Envelope', points: '15' },
+    { id: 2, title: ['Share', <br/>, 'your bday'], image: 'images/PARTYHAT.png', alt: 'Birthday', points: '15' },
+    { id: 3, title: ['Get', <br/>, 'pierced'], image: 'images/CATEARRINGS.png', alt: 'Cat earrings', points: '100' },
+    { id: 4, title: ['Make a', <br/>, 'purchase'], image: 'images/SHOPPINGBAG.png', alt: 'Shopping bag', points: '50' }
   ];
 
   return (
     <Slider {...settings} className="point-grid">
       {slideData.map((data) => (
-        <div className="point-item">
+        <div key={data.id} className="point-item">
           <p className="title">{data.title}</p>
 
           <div className="img-wrapper">

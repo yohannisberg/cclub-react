@@ -1,5 +1,6 @@
 import './HowItWorks.css';
 import GlassesAnimation from '../GlassesAnimation';
+import PostStepAnimation from '../PostStepAnimation';
 
 
 export function HowItWorks() {
@@ -74,17 +75,7 @@ export function HowItWorks() {
 
         <div className="post-step">
 
-          <div className="repeat-wrapper">
-            <div id="trigger1"></div>
-            <div id="trigger2"></div>
-            <div id="trigger3"></div>
-
-            <p id="animate1" className="line-1"><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span></p>
-
-            <p id="animate2" className="line-2"><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span></p>
-
-            <p id="animate3" className="line-3"><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span></p>
-          </div>
+          <PostStepAnimation />
 
           <div className="cta-wrapper">
             <a className="trackCTA cta" href="#" data-ctainfo="HP CLUXE CTA">JOIN NOW</a>

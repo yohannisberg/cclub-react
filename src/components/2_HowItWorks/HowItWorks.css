@@ -159,18 +159,6 @@
 	position: relative;
 	margin-top: calc(var(--vwFW)*-0.6);
 }
-.steps-wrapper .post-step .repeat-wrapper #trigger1 {
-	top: calc(var(--vwFW)*-5);
-	position: absolute;
-}
-.steps-wrapper .post-step .repeat-wrapper #trigger2 {
-	top: calc(var(--vwFW)*-5);
-	position: absolute;
-}
-.steps-wrapper .post-step .repeat-wrapper #trigger3 {
-	top: calc(var(--vwFW)*-5);
-	position: absolute;
-}
 .steps-wrapper .post-step .repeat-wrapper p span{
 	color: var(--cclubDarkBlue);
 	font-size: calc(var(--vwFW)*7.2);
@@ -178,15 +166,7 @@
 	line-height: .7;
 }
 
-.steps-wrapper .post-step .repeat-wrapper #animate1 {
-	/*margin-left: calc(var(--vwFW)*-130.5);*/
-	margin-left: -144.5%;
-}
-.steps-wrapper .post-step .repeat-wrapper #animate2 {
-	margin-left: -256%;
-}
-.steps-wrapper .post-step .repeat-wrapper #animate3 {
-	margin-left: -259.5%;
+.steps-wrapper .post-step .repeat-wrapper .line-3 {
 	margin-bottom: calc(var(--vwFW)*-.3);
 }
 .steps-wrapper .post-step .cta-wrapper {
