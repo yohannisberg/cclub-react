@@ -13,38 +13,57 @@ const PostStepAnimation = () => {
   const triggerRef3 = useRef();
 
   useEffect(() => {
-    gsap.to(triggerRef1.current, {
-      x: -100,
-      scrollTrigger: {
-        trigger: triggerRef1.current,
-        start: "top 50%",
-        end: "top 10%",
-        scrub: true,
-        markers: false
-      },
-    });
+    gsap.fromTo(triggerRef1.current, 
+      { x: -150},
+      {
+        x: -3,
+        duration: 3, 
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: triggerRef1.current,
+          start: "top 80%",
+          scrub: false,
+          toggleActions: "play none none none",
+        },
+      }
+    );
 
-    gsap.to(triggerRef2.current, {
-      x: -150,
-      scrollTrigger: {
-        trigger: triggerRef2.current,
-        start: "top 40%",
-        end: "top 10%",
-        scrub: true,
-        markers: false
-      },
-    });
+    gsap.fromTo(triggerRef2.current, 
+      { x: -275},
+      {
+        x: -339,
+        duration: 4, 
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: triggerRef2.current,
+          start: "top 80%",
+          scrub: false,
+          toggleActions: "play none none none",
+        },
+      }
+    );
 
-    gsap.to(triggerRef3.current, {
-      x: -300,
-      scrollTrigger: {
-        trigger: triggerRef2.current,
-        start: "top 35%",
-        end: "top 10%",
-        scrub: true,
-        markers: false
-      },
-    });
+    gsap.fromTo(triggerRef3.current, 
+      { x: -1365},
+      {
+        x: -1297,
+        duration: 5, 
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: triggerRef3.current,
+          start: "top 85%",
+          scrub: false,
+          markers: false,
+          toggleActions: "play none none none",
+        },
+      }
+    );
+
+    // ✅ clean up ScrollTriggers on unmount
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
+
   }, []);
 
   return (
@@ -52,9 +71,6 @@ const PostStepAnimation = () => {
       <p 
         ref={triggerRef1} 
         className="line-1"
-        style={{
-          transform: "translateX(-50px)"
-        }}
       >
         <span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span>
       </p>
@@ -62,18 +78,12 @@ const PostStepAnimation = () => {
       <p 
         ref={triggerRef2} 
         className="line-2"
-        style={{
-          transform: "translateX(-175px)"
-        }}
       >
         <span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span></p>
 
       <p 
         ref={triggerRef3} 
         className="line-3"
-        style={{
-          transform: "translateX(-265px)"
-        }}
       >
         <span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span><span>JOIN.GET REWARDS.REPEAT.JOIN.GET REWARDS.REPEAT.</span></p>
     </div>
