@@ -171,6 +171,7 @@
 	}
 	.point-grid-component .slick-prev,
 	.point-grid-component .slick-next {
+		width: calc(var(--vw) * 7);
 		bottom: calc(var(--vw)*12.25);
 	}
 	.cclub-component .point-grid .point-item .title,

@@ -4,6 +4,9 @@ export function Hero() {
   return (
     <section className="cclub-component hero-component dark-blue-background">
       <div className="max-1300">
+
+        <img class="hero-top-img" src="images/hero-top-mb.png" alt="C.Club Animations" />
+
         <div className="text-wrapper">
           <h2 className="white">Welcome to <img src="images/CCLUBlogo.png" alt="C.Club"/></h2>
           <p className="white">C•CLUB is where you get <br className="mobile-only"/>rewarded just <br className="desktop-only"/>for being you. <br className="mobile-only"/>It’s true! Sign up for FREE <br className="mobile-only"/>to unlock <br className="desktop-only"/>exclusive Rewards <br className="mobile-only"/>and endless perks.</p>
